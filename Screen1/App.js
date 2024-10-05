@@ -2,13 +2,43 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { ScrollView } from "react-native-web";
 import AntDesign from '@expo/vector-icons/AntDesign';
+import * as Font from 'expo-font';
+import AppLoading from 'expo-app-loading';
 
 
+// Load fonts
+const loadFonts = () => {
+  return Font.loadAsync({
+    'Roboto-Regular': require('./assets/fonts/Roboto-Regular.ttf'),
+  });
+};
+
+
+// Component Screen1
 const Screen1 = () => {
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  useEffect(() => {
+    async function prepare() {
+      try {
+        await loadFonts();
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        setFontsLoaded(true);
+      }
+    }
+    prepare();
+  }, []);
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require('./assets/vsmart_blue.png')}
+        source={require('./assets/images/vsmart_blue.png')}
         style={styles.productImage}
       />
       <Text style={styles.productName}>
@@ -58,6 +88,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     backgroundColor: 'white',
     shadowColor: '#000',
+    fontFamily: 'Roboto',
   },
   productImage: {
     width: '100%',
