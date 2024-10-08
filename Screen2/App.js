@@ -125,7 +125,7 @@ const largeStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    padding: 0,  // Bỏ padding để full màn hình
+    padding: 0,
   },
   title: {
     fontFamily: 'Roboto-Regular',
@@ -137,15 +137,15 @@ const largeStyles = StyleSheet.create({
   phoneImage: {
     width: 112,
     height: 132,
-    alignSelf: 'flex-start',  // Căn trái thay vì căn giữa
-    marginLeft: 10,  // Thêm margin bên trái
+    alignSelf: 'flex-start',
+    marginLeft: 10,
     marginVertical: 10,
   },
   colorSelector: {
     flex: 1,
     backgroundColor: '#C4C4C4',
-    padding: 0,  // Bỏ padding
-    marginVertical: 0,  // Bỏ margin
+    padding: 0,
+    marginVertical: 0, 
   },
   colorSelectorTitle: {
     fontFamily: 'Roboto-Regular',
@@ -153,12 +153,12 @@ const largeStyles = StyleSheet.create({
     lineHeight: 21,
     color: '#000000',
     marginVertical: 10,
-    marginLeft: 10,  // Thêm margin bên trái
+    marginLeft: 10, 
   },
   colorOptions: {
-    flexDirection: 'column',  // Sắp xếp theo chiều dọc
-    alignItems: 'center',  // Căn giữa các màu
-    gap: 13,  // Khoảng cách giữa các màu
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    gap: 13, 
   },
   colorOption: {
     width: 85,
@@ -170,24 +170,24 @@ const largeStyles = StyleSheet.create({
     elevation: 4,
   },
   doneButton: {
-    width: '90%',  // Chiều rộng 90% màn hình
+    width: '90%', 
     height: 44,
-    backgroundColor: '#1952E2',  // Màu xanh dương đậm
+    backgroundColor: '#1952E2',  
     borderWidth: 1,
-    borderColor: '#CA1536',  // Viền đỏ
+    borderColor: '#CA1536',  
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
     marginHorizontal: 20,
-    marginVertical: 20,  // Thêm margin trên dưới
+    marginVertical: 20,  
   },
   doneButtonText: {
     fontFamily: 'Roboto-Bold',
     fontSize: 20,
     lineHeight: 23,
     color: '#FFFFFF',
-    textTransform: 'uppercase',  // Chữ in hoa
+    textTransform: 'uppercase',  
   },
 });
 
