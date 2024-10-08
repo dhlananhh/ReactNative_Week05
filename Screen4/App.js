@@ -4,11 +4,11 @@ import { ScrollView } from "react-native-web";
 import AntDesign from '@expo/vector-icons/AntDesign';
 
 
-const Screen1 = () => {
+const Screen4 = () => {
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require('./assets/images/vsmart_blue.png')}
+        source={require('./assets/images/vsmart_red.png')}
         style={styles.productImage}
       />
       <Text style={styles.productName}>
@@ -136,4 +136,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Screen1;
+export default Screen4;
