@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/react": "^18.3.11"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.4"
+  }
+}
